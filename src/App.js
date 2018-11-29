@@ -30,6 +30,18 @@ class App extends Component {
     });
   }
 
+  // Life cycle hooks
+  // fires when the component first mounts to the DOM
+  componentDidMount() {
+    console.log("component mounted");
+  }
+
+  // fires when we get a change of states or props
+  componentDidUpdate(prevProps, prevState) {
+    console.log("component updated");
+    console.log(prevProps, prevState);
+  }
+
   render() {
     return (
       <div className="App">
